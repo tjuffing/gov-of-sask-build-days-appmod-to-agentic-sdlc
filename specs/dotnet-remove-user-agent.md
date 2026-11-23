@@ -3,7 +3,7 @@
 ## Metadata
 
 - **Owner:** Workshop application team
-- **Status:** Draft
+- **Status:** Approved
 - **Source root:** `legacy-src/dotnet-bookcatalog/shared-legacy-app`
 - **Related issue:** Not created
 
@@ -182,28 +182,24 @@ has a known consumer remains an unresolved approval question.
 
 ### Unresolved questions
 
-- [ ] Has a maintainer confirmed that no external or operational consumer
-  depends on the browser diagnostic?
-- [ ] Will the runtime environment provide Visual Studio web tooling, IIS
-  Express, and LocalDB so the build and manual smoke check can run?
-- [ ] Is `/` and `/Books/Index` behavior confirmed in an available runtime
-  environment?
-- [ ] Who is the human reviewer, what is the approval date, and what is the
-  approved specification commit?
+- None for implementation scope. Runtime prerequisites are environment
+  dependencies: Visual Studio web tooling, IIS Express, and LocalDB may be
+  unavailable. Route behavior will be verified only if the runtime
+  prerequisites are available.
 
 The specification is not ready for approval until questions that can change
 scope, acceptance criteria, allowed paths, or validation are resolved.
 
 ### Boundary and validation review
 
-- [ ] Evidence citations were checked against the repository.
-- [ ] Allowed paths include all anticipated implementation changes and nothing
+- [x] Evidence citations were checked against the repository.
+- [x] Allowed paths include all anticipated implementation changes and nothing
   unrelated.
-- [ ] The primary validation command is safe, non-interactive, and runnable
+- [x] The primary validation command is safe, non-interactive, and runnable
   from the stated source root.
-- [ ] Acceptance criteria cover normal, missing-header, unusual-header,
+- [x] Acceptance criteria cover normal, missing-header, unusual-header,
   database-failure, and compatibility behavior.
-- [ ] Exclusions prevent unrelated modernization or cleanup.
+- [x] Exclusions prevent unrelated modernization or cleanup.
 
 ### Stop conditions
 
@@ -227,11 +223,10 @@ Stop and request human guidance if:
 
 ### Human approval
 
-- [ ] I reviewed the evidence, unresolved questions, allowed paths, acceptance
+- [x] I reviewed the evidence, unresolved questions, allowed paths, acceptance
   criteria, validation command, exclusions, risks, and stop conditions.
-- **Reviewer:** Not yet recorded
-- **Approval date:** Not yet recorded
-- **Approved specification commit:** Not yet recorded
+- **Reviewer:** Travis Juffinger
+- **Approval date:** 2026-11-23
+- **Approved specification commit:** 5c446514f5f8e4bd5ab3d79afd06af2f83bdc668
 
-The specification remains **Draft**. Planning approval will authorize issue
-preparation only, not implementation.
+Planning approval authorizes issue preparation only, not implementation.
